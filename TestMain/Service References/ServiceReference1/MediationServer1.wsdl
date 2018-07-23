@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MediationServer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://172.20.74.138:8001/MediationServer?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://172.20.74.138:8001/MediationServer?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://172.20.74.138:8001/MediationServer?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ClassLibrary" />
+      <xsd:import schemaLocation="http://172.20.74.138:8001/MediationServer?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMediationServer_SignIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignIn" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_SignIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignInResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_SignOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignOut" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_SignOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_RequestFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestFiles" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_RequestFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_getAllFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllFiles" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_getAllFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_getAllActiveUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllActiveUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_getAllActiveUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllActiveUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_SignUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignUp" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_SignUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_SearchUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUser" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_SearchUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_setUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:setUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_setUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_deleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_deleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_GetAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_GetAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_resetAllActiveUsersAndActiveUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:resetAllActiveUsersAndActiveUsers" />
+  </wsdl:message>
+  <wsdl:message name="IMediationServer_resetAllActiveUsersAndActiveUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:resetAllActiveUsersAndActiveUsersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMediationServer">
+    <wsdl:operation name="SignIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/SignIn" message="tns:IMediationServer_SignIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/SignInResponse" message="tns:IMediationServer_SignIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/SignOut" message="tns:IMediationServer_SignOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/SignOutResponse" message="tns:IMediationServer_SignOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/RequestFiles" message="tns:IMediationServer_RequestFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/RequestFilesResponse" message="tns:IMediationServer_RequestFiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/getAllFiles" message="tns:IMediationServer_getAllFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/getAllFilesResponse" message="tns:IMediationServer_getAllFiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllActiveUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/getAllActiveUsers" message="tns:IMediationServer_getAllActiveUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/getAllActiveUsersResponse" message="tns:IMediationServer_getAllActiveUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignUp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/SignUp" message="tns:IMediationServer_SignUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/SignUpResponse" message="tns:IMediationServer_SignUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/SearchUser" message="tns:IMediationServer_SearchUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/SearchUserResponse" message="tns:IMediationServer_SearchUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/setUsers" message="tns:IMediationServer_setUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/setUsersResponse" message="tns:IMediationServer_setUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/deleteUser" message="tns:IMediationServer_deleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/deleteUserResponse" message="tns:IMediationServer_deleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/UpdateUser" message="tns:IMediationServer_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/UpdateUserResponse" message="tns:IMediationServer_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/GetAllUsers" message="tns:IMediationServer_GetAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/GetAllUsersResponse" message="tns:IMediationServer_GetAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="resetAllActiveUsersAndActiveUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMediationServer/resetAllActiveUsersAndActiveUsers" message="tns:IMediationServer_resetAllActiveUsersAndActiveUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMediationServer/resetAllActiveUsersAndActiveUsersResponse" message="tns:IMediationServer_resetAllActiveUsersAndActiveUsers_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMediationServer" type="tns:IMediationServer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SignIn">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/SignIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignOut">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/SignOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestFiles">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/RequestFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllFiles">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/getAllFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllActiveUsers">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/getAllActiveUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignUp">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/SignUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUser">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/SearchUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUsers">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/setUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/deleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/GetAllUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resetAllActiveUsersAndActiveUsers">
+      <soap:operation soapAction="http://tempuri.org/IMediationServer/resetAllActiveUsersAndActiveUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MediationServer">
+    <wsdl:port name="BasicHttpBinding_IMediationServer" binding="tns:BasicHttpBinding_IMediationServer">
+      <soap:address location="http://172.20.74.138:8001/MediationServer/MediationServer" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

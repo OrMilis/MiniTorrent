@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediationService", "MediationService\MediationService.csproj", "{2A93162A-7DA5-4669-8394-5A54166584A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediationServer_Host", "MediationServer_Host\MediationServer_Host.csproj", "{E9454D2F-57FA-4066-93B3-A114A83D2648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMain", "TestMain\TestMain.csproj", "{1A363738-EAA0-41FE-A0B8-F78652934AD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTorrent", "MiniTorrent\MiniTorrent.csproj", "{B45D8EEA-33D4-43D0-8D19-6E2FC15CFCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{E69E6AF7-6F95-460B-B0B8-3F37AED06516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPortal", "WebPortal\WebPortal.csproj", "{D3A6F955-3A07-472E-A822-1C64FF4B3EB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A93162A-7DA5-4669-8394-5A54166584A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A93162A-7DA5-4669-8394-5A54166584A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A93162A-7DA5-4669-8394-5A54166584A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A93162A-7DA5-4669-8394-5A54166584A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9454D2F-57FA-4066-93B3-A114A83D2648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9454D2F-57FA-4066-93B3-A114A83D2648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9454D2F-57FA-4066-93B3-A114A83D2648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9454D2F-57FA-4066-93B3-A114A83D2648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A363738-EAA0-41FE-A0B8-F78652934AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A363738-EAA0-41FE-A0B8-F78652934AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A363738-EAA0-41FE-A0B8-F78652934AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A363738-EAA0-41FE-A0B8-F78652934AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45D8EEA-33D4-43D0-8D19-6E2FC15CFCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45D8EEA-33D4-43D0-8D19-6E2FC15CFCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45D8EEA-33D4-43D0-8D19-6E2FC15CFCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45D8EEA-33D4-43D0-8D19-6E2FC15CFCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69E6AF7-6F95-460B-B0B8-3F37AED06516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69E6AF7-6F95-460B-B0B8-3F37AED06516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69E6AF7-6F95-460B-B0B8-3F37AED06516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69E6AF7-6F95-460B-B0B8-3F37AED06516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A6F955-3A07-472E-A822-1C64FF4B3EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A6F955-3A07-472E-A822-1C64FF4B3EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A6F955-3A07-472E-A822-1C64FF4B3EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A6F955-3A07-472E-A822-1C64FF4B3EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5113A4E-6AD9-4DD4-A914-BECCD23D218F}
+	EndGlobalSection
+EndGlobal

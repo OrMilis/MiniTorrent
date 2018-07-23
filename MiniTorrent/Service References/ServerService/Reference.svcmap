@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7d6b2fea-fcca-4966-b1a0-051036c82416" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8001/MediationServer" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MediationServer.xsd" MetadataType="Schema" ID="1e140271-4a79-41ab-9c2d-3e72ccf304ac" SourceId="1" SourceUrl="http://172.20.74.138:8001/MediationServer?xsd=xsd3" />
+    <MetadataFile FileName="MediationServer1.xsd" MetadataType="Schema" ID="4bc07ab1-520a-456c-b2ca-0f7566a8b1a9" SourceId="1" SourceUrl="http://172.20.74.138:8001/MediationServer?xsd=xsd2" />
+    <MetadataFile FileName="MediationServer2.xsd" MetadataType="Schema" ID="a6904f75-687b-4186-a80a-0d8f9505a85e" SourceId="1" SourceUrl="http://172.20.74.138:8001/MediationServer?xsd=xsd1" />
+    <MetadataFile FileName="MediationServer3.xsd" MetadataType="Schema" ID="d6d8b491-9392-4154-bc3a-517859056320" SourceId="1" SourceUrl="http://172.20.74.138:8001/MediationServer?xsd=xsd0" />
+    <MetadataFile FileName="MediationServer.disco" MetadataType="Disco" ID="9e76551e-2d21-43a4-b72d-c2891af9c79c" SourceId="1" SourceUrl="http://172.20.74.138:8001/MediationServer?disco" />
+    <MetadataFile FileName="MediationServer.wsdl" MetadataType="Wsdl" ID="4674a634-820d-44ff-be7b-880cceeb4f5d" SourceId="1" SourceUrl="http://172.20.74.138:8001/MediationServer?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

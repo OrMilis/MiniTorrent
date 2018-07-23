@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e80a89c9-15b2-4397-bfc8-16940ab739f8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8001/MediationServer/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="73f62fe8-e3fc-4e2f-9d3c-e5bc922e16ba" SourceId="1" SourceUrl="http://localhost:8001/MediationServer/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="ecbcaa3e-4405-4ef3-8172-b1f830b22d61" SourceId="1" SourceUrl="http://localhost:8001/MediationServer/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="4e48284b-d1a8-4b60-b158-01b6f808998f" SourceId="1" SourceUrl="http://localhost:8001/MediationServer/mex" />
+    <MetadataFile FileName="ClassLibrary.xsd" MetadataType="Schema" ID="e7036bb1-3d24-46b4-8cd6-419006fdbb11" SourceId="1" SourceUrl="http://localhost:8001/MediationServer/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="b818e23e-6b28-4281-9c2f-14ec3014fec8" SourceId="1" SourceUrl="http://localhost:8001/MediationServer/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
